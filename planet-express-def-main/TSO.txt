@@ -1,0 +1,46 @@
+Ejercicios de TSO
+1. A partir de la información del fichero /etc/passwd se pide escribir un script que muestre por pantalla un listado de los alumnos junto con los permisos de su directorio HOME. En la implementación del script se deberá utilizar la sentencia while y el comando read.
+
+La salida pedida es (ejemplo):
+
+bu0001 drwxr-xr-x
+
+bu0010 drwxr-x---
+
+………………………………………………
+
+2. Escribir un script que muestre por pantalla la suma de todos los números que reciba como parámetro. El número de parámetros es variable, desde 0 hasta N. Un ejemplo de uso es:
+
+$ suma.sh 1 2 3 4
+
+El resultado es: 10
+
+3. Se dispone del script
+
+while true
+
+do
+
+  sleep 5
+
+done
+
+cuyo nombre es prog-<NºMatrículaAlumno>.sh (por ejemplo para el número de matrícula bu0000 será prog-bu0000.sh)
+
+El script deberá arrancarse en background (&).
+
+Escribir un nuevo script que controle, cada 3 segundos, que el script prog-<NºMatrículaAlumno>.sh esté funcionando.  Si detecta que no está arrancado tiene que mostrar un mensaje por pantalla indicando que el script  prog-<NºMatrículaAlumno>.sh no se está ejecutando.
+
+4. Escribir un script que contenga una función de nombre comprobar_usuario. La función recibirá como parámetro un usuario y, mediante el uso del comando last, mostrará las direcciones ip de conexión del usuario. Cada dirección ip deberá aparecer una única vez.
+
+La función tiene que comprobar que ha sido llamada con un único parámetro y devolver, mediante la sentencia return, un valor indicando si se ha ejecutado con normalidad o por el contrario se ha producido un error. Para probar la función utilizar varias llamadas a la misma.
+
+Un posible esqueleto de la función es:
+
+function comprobar_usuario {
+
+# comprobar que ha sido llamada con un único parámetro
+
+# llamar a last..... mostrando las direcciones ip de conexión.
+
+}
