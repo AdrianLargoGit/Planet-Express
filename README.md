@@ -15,9 +15,8 @@ This is a Java project developed for a university course using IntelliJ IDEA. It
 ## How to Run
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/your-repo-name.git
+   git clone https://github.com/AdrianLargoGit/Planet-Express.git
    ```
 2. Open the project in IntelliJ IDEA.
 3. Build and run the project in the terminal.
-
 
